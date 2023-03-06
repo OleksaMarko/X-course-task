@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import data from "../misc/books.json";
 import { AppContext } from "../components/AppContext";
 import { useContext, useState } from "react";
-// import Modal from "../components/modal/Modal";
+import Modal from "../components/modal/Modal";
 
 // import BookCalc from "../components/BooksCalc";
 
@@ -138,7 +138,7 @@ export default function BookPage() {
             </span>
           </div>
 
-          {/* <Modal
+          <Modal
             active={modalActive}
             setActive={setModalActive}
             className="modal"
@@ -159,7 +159,7 @@ export default function BookPage() {
                 </Link>
               </div>
             </div>
-          </Modal> */}
+          </Modal>
         </div>
       </Content>
     </>

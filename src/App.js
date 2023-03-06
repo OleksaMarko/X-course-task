@@ -19,10 +19,10 @@ function App() {
       <Layout className="layout">
         <HeaderInfo />
         <div className="container">
-          <Routes>
-            <Route path="/" element={<Login />} />
+          <Routes basename="/X-course-task">
+            <Route path="/X-course-task/" element={<Login />} />
             <Route
-              path="/books"
+              path="/X-course-task/books"
               element={
                 <RequireAuth>
                   <Books />
@@ -30,16 +30,16 @@ function App() {
               }
             />
             <Route
-              path="/book/:id"
+              path="/X-course-task/book/:id"
               element={
                 <RequireAuth>
                   <BookPage />
                 </RequireAuth>
               }
             />
-            {/* <Route path="bookpage/:bookID" element={<BookPage />} />  */}
+
             <Route
-              path="/basket"
+              path="/X-course-task/basket"
               element={
                 <RequireAuth>
                   <Basket />
