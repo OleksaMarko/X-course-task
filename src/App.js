@@ -20,9 +20,9 @@ function App() {
         <HeaderInfo />
         <div className="container">
           <Routes basename="/X-course-task">
-            <Route path="/X-course-task/" element={<Login />} />
+            <Route path="/" element={<Login />} />
             <Route
-              path="/X-course-task/books"
+              path="/books"
               element={
                 <RequireAuth>
                   <Books />
