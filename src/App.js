@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Login from "./pages/LoginPage";
 import ErrorPage from "./pages/ErrorPage";
 import Books from "./pages/BooksPage";
@@ -19,7 +19,7 @@ function App() {
       <Layout className="layout">
         <HeaderInfo />
         <div className="container">
-          <Routes basename="/X-course-task">
+          <Routes>
             <Route path="/" element={<Login />} />
             <Route
               path="/books"
@@ -30,7 +30,7 @@ function App() {
               }
             />
             <Route
-              path="/X-course-task/book/:id"
+              path="/book/:id"
               element={
                 <RequireAuth>
                   <BookPage />
@@ -39,7 +39,7 @@ function App() {
             />
 
             <Route
-              path="/X-course-task/basket"
+              path="/basket"
               element={
                 <RequireAuth>
                   <Basket />

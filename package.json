@@ -2,7 +2,7 @@
   "name": "x-course-task",
   "homepage": "https://oleksamarko.github.io/X-course-task",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@ant-design/icons": "^5.0.1",
     "@emotion/react": "^11.10.6",

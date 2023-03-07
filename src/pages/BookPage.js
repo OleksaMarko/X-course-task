@@ -21,7 +21,9 @@ export default function BookPage() {
 
   console.log(book);
   const ImageSrc =
-    book.image === "" ? "../images/icons/noun-square-cross.svg" : book.image;
+    book.image === ""
+      ? "/X-course-task/images/icons/noun-square-cross.svg"
+      : book.image;
 
   // console.log(count * book.price);
 

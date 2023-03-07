@@ -13,7 +13,8 @@ export default function BookElement({ item }) {
           title={item.title}
           src={item.image}
           onError={(event) => {
-            event.target.src = "/images/icons/noun-square-cross.svg";
+            event.target.src =
+              "/X-course-task/images/icons/noun-square-cross.svg";
             event.onerror = null;
           }}
         />
